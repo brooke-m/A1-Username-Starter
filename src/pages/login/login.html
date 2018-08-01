@@ -13,6 +13,11 @@
     please give me your name so i know what to call you
   </p>
 
-  <ion-label fixed>name:</ion-label>
-
+  <ion-list>
+    <ion-item>
+      <ion-label>name</ion-label>
+      <ion-input placeholder='your name here' #name></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button color="secondary" (click)="goTo(name.value)">yep thats me</button>
 </ion-content>
